@@ -44,4 +44,38 @@ SELECT * FROM table WHERE field IN ('some1', 'some2');
 Сырые SQL-запросы. 
 
 
+Aggregate functions:
+AVG, COUNT, SUM, MAX, MIN
+
+
+select count(*) from table_name;
+select avg(field) from table_name; (avg, max, min);
+
+select count(*), field_name1 group  by field_name1;
+
+select count(*), field_name1 group  by field_name1 having count(*) > int;
+
+select * from table where not field = 'some';
+select * from table where field !=(<>) 'some';
+SELECT * FROM table WHERE field IS NULL;
+
+SELECT field1 AS new_field1 FROM table;
+SELECT * FROM table ORDER BY field (defaulr=ABC)
+
+SELECT * FROM table where field BETWEEN 'some1' AND 'some2';
+SELECT * FROM table where field BETWEEN LIKE '%some1' AND ILIKE '%some2' limit2;
+
+SELECT DISTINCT field FROM table; -> return unique
+
+UPDATE table SET field = 'new_value' where id = 1;
+
+
+
+
+
+
+
+
+
+
 
