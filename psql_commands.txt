@@ -70,7 +70,20 @@ SELECT DISTINCT field FROM table; -> return unique
 UPDATE table SET field = 'new_value' where id = 1;
 
 
+CREATE table
 
+
+PK id <--------------------- FK id_table_name
+INNER JOIN 
+RIGHT OUTER JOIN
+LEFT OUTER JOIN
+FULL OUTER JOIN
+
+SELECT user.name, order.quintity FROM order INNER JOIN user ON order.id_user = user.id;
+
+SELECT u.name, o.quintity FROM order AS o INNER JOIN user AS i ON o.id_user = u.id;
+
+SELECT u.name, p.title, o.quintity FROM order_item as oi INNER JOIN products as p ON oi.id+product=p.id INNER JOIN order AS o ON oi.id_order=o.oi_id INNER JOIN user AS u ON o.id_users = u.id;
 
 
 
